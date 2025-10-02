@@ -1,17 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
+
+This is my portfolio website, built to showcase my skills, experience, and projects using modern web technologies.
+
+##  Features
+
+- **Component-Based Architecture**: Built with reusable React components.
+- **Responsive Design**: Optimized for a seamless experience on both mobile and desktop devices.
+- **Dark Mode**: Includes a dark theme for better viewing in low-light environments.
+- **Data-Driven Content**: Experience and other sections are populated from a central data file (`src/lib/data.js`).
+
+##  Tech Stack
+
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **Language**: JavaScript & React
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
