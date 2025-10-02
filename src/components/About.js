@@ -1,13 +1,13 @@
 "use client";// src/components/About.js
 import { use, useRef } from "react";
 import { Code, Database, Globe, Smartphone, Server, Palette } from "lucide-react";
-import useSmoothScroll from "@/hooks/useSmoothScroll";
+import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
 
 const skills = [
   { name: "Frontend Development", icon: Globe, color: "text-blue-500" },
   { name: "Backend Development", icon: Server, color: "text-green-500" },
   { name: "Database Design", icon: Database, color: "text-purple-500" },
-  { name: "Mobile Development", icon: Smartphone, color: "text-pink-500" },
+  { name: "DSA C/C++", icon: Code, color: "text-yellow-500" },
   { name: "UI/UX Design", icon: Palette, color: "text-orange-500" },
   { name: "Full-Stack Solutions", icon: Code, color: "text-indigo-500" },
 ];
@@ -21,7 +21,7 @@ export default function About() {
   const statsRef = useRef(null);
 
   // Attach all refs to the reusable smooth scroll hook
-  useSmoothScroll([headingRef, dividerRef, aboutTextRef, skillsRef, statsRef]);
+  useFadeInOnScroll([headingRef, dividerRef, aboutTextRef, skillsRef, statsRef]);
 
   return (
     <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">

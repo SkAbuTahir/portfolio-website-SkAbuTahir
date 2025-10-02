@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { toast, Toaster } from "react-hot-toast";
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Download } from "lucide-react";
 
 export default function Contact() {
@@ -19,17 +20,38 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const toastId = toast.loading("Sending your message...");
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
-    
-    // Show success message (you can implement a toast notification here)
-    alert("Thank you for your message! I'll get back to you soon.");
+
+    const data = {
+      ...formData,
+      // Read access key from environment variables
+      access_key: "f4cf8c17-52f5-47bd-9e07-b39c60f9215c",
+      from_name: "SK Abu Tahir's Portfolio",
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        toast.success("Message sent successfully!", { id: toastId });
+        setFormData({ name: "", email: "", message: "" }); // Reset form
+      } else {
+        toast.error(`Something went wrong: ${result.message}`, { id: toastId });
+      }
+    } catch (error) {
+      toast.error("An error occurred while sending the message.", { id: toastId });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -37,6 +59,7 @@ export default function Contact() {
       id="contact"
       className="py-20 bg-gray-50 dark:bg-gray-900"
     >
+      <Toaster position="top-center" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
