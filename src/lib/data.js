@@ -104,12 +104,12 @@ export const projects = [
     github: "https://github.com/SkAbuTahir/react-todo-app",
   },
   
-  {
-    title: "NexConnect",
-    tech: ["Next.js", "React", "Tailwind CSS"],
-    description:
-      "An Alumni database management system for SIH2025 (currently in progress), enabling alumni to connect and network.",
-    link: "/notfound",
-    github: "https://github.com/SkAbuTahir/NexConnect-t",
-  },
+  // {
+  //   title: "NexConnect",
+  //   tech: ["Next.js", "React", "Tailwind CSS"],
+  //   description:
+  //     "An Alumni database management system for SIH2025 (currently in progress), enabling alumni to connect and network.",
+  //   link: "/notfound",
+  //   github: "https://github.com/SkAbuTahir/NexConnect-t",
+  // },
 ];

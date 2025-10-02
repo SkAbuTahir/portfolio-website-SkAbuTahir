@@ -322,7 +322,7 @@ export default function Hero() {
               className="flex justify-center lg:justify-start space-x-6 mt-8"
             >
               <a
-                href="https://github.com/SkAbuTahir/personal_portfolio_website"
+                href="https://github.com/SkAbuTahir/portfolio-website-SkAbuTahir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"

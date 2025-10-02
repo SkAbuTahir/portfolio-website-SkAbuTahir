@@ -32,7 +32,7 @@ export default function Footer() {
                 <Github size={20} />
               </a>
               <a
-                href="https://github.com/SkAbuTahir/personal_portfolio_website"
+                href="https://github.com/SkAbuTahir/portfolio-website-SkAbuTahir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-200"
@@ -78,7 +78,7 @@ export default function Footer() {
                 { name: "Blog", href: "#blog" },
                 { name: "Resume", href: "/resume.pdf" },
                 { name: "Achievements", href: "#achievements" },
-                { name: "GitHub", href: "https://github.com/SkAbuTahir/personal_portfolio_website" },
+                { name: "GitHub", href: "https://github.com/SkAbuTahir/portfolio-website-SkAbuTahir" },
               ].map((link) => (
                 <li key={link.name}>
                   <a
