@@ -1,5 +1,7 @@
 // import { link } from "fs";
 
+import { link } from "fs";
+
 export const experiences = [
   {
     title: "Full-Stack Developer Intern",
@@ -108,8 +110,8 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     description:
       "A virtual Valentine's Day cards.",
-    link: "https://github.com/SkAbuTahir/usingExpress-willYouBeMyValentine/tree/main",
-    github: "https://using-express-will-you-be-my-valent.vercel.app/",
+    github: "https://github.com/SkAbuTahir/usingExpress-willYouBeMyValentine/tree/main",
+    link: "https://using-express-will-you-be-my-valent.vercel.app/",
   },
   
   // {
