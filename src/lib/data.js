@@ -103,6 +103,14 @@ export const projects = [
     link: "https://react-todo-app-six-lime-28.vercel.app/",
     github: "https://github.com/SkAbuTahir/react-todo-app",
   },
+  {
+    title: "Be My Valentine",
+    tech: ["HTML", "CSS", "JavaScript"],
+    description:
+      "A virtual Valentine's Day cards.",
+    link: "https://github.com/SkAbuTahir/usingExpress-willYouBeMyValentine/tree/main",
+    github: "https://using-express-will-you-be-my-valent.vercel.app/",
+  },
   
   // {
   //   title: "NexConnect",
