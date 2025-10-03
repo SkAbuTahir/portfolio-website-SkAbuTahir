@@ -14,14 +14,15 @@ export const experiences = [
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-export const blogPosts = [{
-    title: "My Full-Stack Journey ",
-    date: "September 2025",
-    excerpt:
-      "From starting as a B.Tech IT student to working as a Full-Stack Developer Intern, here’s how I began my journey into scalable web development.",
-    content:
-      "I started learning web development with the basics of HTML, CSS, and JavaScript. Over time, I discovered React and Next.js, which allowed me to build dynamic, production-ready apps. My internship at IISPPR gave me hands-on experience working with client management systems, role-based authentication, and real-time analytics.",
-  },
+export const blogPosts = [
+  // {
+  //   title: "My Full-Stack Journey ",
+  //   date: "Early 2025",
+  //   excerpt:
+  //     "From starting as a B.Tech IT student to working as a Full-Stack Developer Intern, here’s how I began my journey into scalable web development.",
+  //   content:
+  //     "I started learning web development with the basics of HTML, CSS, and JavaScript. Over time, I discovered React and Next.js, which allowed me to build dynamic, production-ready apps. My internship at IISPPR gave me hands-on experience working with client management systems, role-based authentication, and real-time analytics.",
+  // },
   {
     title: "Client Management System (ClientPro)",
     date: "August 2025",
@@ -35,7 +36,7 @@ export const blogPosts = [{
     title: "Balancing College & Development",
     date: "July 2025",
     excerpt:
-      "Being a 1st-year student at Jalpaiguri Government Engineering College while also pursuing real-world development experience wasn’t easy, but it was rewarding.",
+      "Being a 2nd-year student at Jalpaiguri Government Engineering College while also pursuing real-world development experience wasn’t easy, but it was rewarding.",
     content:
       "Between academics, hackathons, and internships, I learned how to manage my time better. Participating in contests and being active in the JGEC Coders Club also pushed me to solve problems faster and collaborate with peers.",
   },
