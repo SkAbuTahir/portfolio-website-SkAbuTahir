@@ -14,8 +14,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sk Abu Tahir ",
-  description: "Sk Abu Tahir Portfolio Website",
+  title: "SK Abu Tahir - Full Stack Developer | React, Next.js, Node.js",
+  description: "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies. B.Tech IT student with hands-on experience in building scalable web applications.",
+  keywords: "SK Abu Tahir, Full Stack Developer, React Developer, Next.js, JavaScript, Web Development, Portfolio",
+  authors: [{ name: "SK Abu Tahir" }],
+  creator: "SK Abu Tahir",
+  openGraph: {
+    title: "SK Abu Tahir - Full Stack Developer",
+    description: "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies.",
+    url: "https://skabutahirportfolio.vercel.app/",
+    siteName: "SK Abu Tahir Portfolio",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SK Abu Tahir - Full Stack Developer",
+    description: "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -30,6 +49,8 @@ export default function RootLayout({
           name="google-site-verification"
           content="XJl00tRa138kOdFPiJp0E6qTqzxgP2H5yZ-9sdphc7I"
         />
+        <link rel="canonical" href="https://your-domain.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

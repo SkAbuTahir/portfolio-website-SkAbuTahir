@@ -235,6 +235,23 @@ export default function Hero() {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "SK Abu Tahir",
+            "jobTitle": "Full Stack Developer",
+            "description": "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies",
+            "url": "https://your-domain.com",
+            "sameAs": [
+              "https://github.com/SkAbuTahir",
+              "https://www.linkedin.com/in/sk-abu-tahir-/"
+            ]
+          })
+        }}
+      />
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900" />
 
