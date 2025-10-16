@@ -83,6 +83,14 @@ export const achievements = [
 
 export const projects = [
   {
+    title: "Tasknest",
+    tech: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+    description:
+      "A tenet saas application to manage tasks with authentication support, built using Next.js and React.Backend built on Node.js and Express.js with MongoDB as the database.",
+    link: "https://task-nest-alpha.vercel.app/login",
+    github: "https://github.com/SkAbuTahir/task-nest",
+  },
+  {
     title: "Client Management System (ClientPro)",
     tech: ["Next.js", "React", "Tailwind CSS", "Vercel"],
     description:
