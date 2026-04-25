@@ -47,7 +47,7 @@ export default function Contact() {
       } else {
         toast.error(`Something went wrong: ${result.message}`, { id: toastId });
       }
-    } catch (error) {
+    } catch (_error) {
       toast.error("An error occurred while sending the message.", { id: toastId });
     } finally {
       setIsSubmitting(false);

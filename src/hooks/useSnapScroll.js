@@ -10,7 +10,7 @@ export default function useSnapScroll() {
   useEffect(() => {
     // Dynamic import to avoid SSR issues
     const initLenis = async () => {
-      const { default: Lenis } = await import("@studio-freight/lenis");
+      const { default: Lenis } = await import("lenis");
       
       lenisRef.current = new Lenis({
         duration: 1.2,

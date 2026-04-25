@@ -1,6 +1,6 @@
 "use client";// src/components/About.js
-import { use, useRef } from "react";
-import { Code, Database, Globe, Smartphone, Server, Palette } from "lucide-react";
+import { useRef } from "react";
+import { Code, Database, Globe, Server, Palette } from "lucide-react";
 import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
 
 const skills = [
