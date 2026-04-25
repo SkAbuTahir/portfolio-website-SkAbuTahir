@@ -4,11 +4,18 @@
 
 export const experiences = [
   {
+    title: "Project Intern",
+    link: "https://www.deepduofoundation.com/",
+    company: "DeepDuo Foundation",
+    period: "Feb 2026 – Current",
+    description: "Building a conference management system using Next.js and Node.js. Implementing authentication, submission workflows, and review pipelines. Designing scalable backend APIs and database schema. Collaborating in an agile team to ship production-ready features."
+  },
+  {
     title: "Full-Stack Developer Intern",
     link: "https://iisppr.org.in/",
-    company: "International Institute Of SDGS & Public Policy Research (IISPPR)",
-    period: "Current Position",
-    description: "Developed and maintained comprehensive client management systems using Next.js and React. Built production-ready applications with real-time analytics and role-based authentication. Collaborated with team members to deliver business solutions and optimize user experience. Implemented full-stack features including database design, API development, and frontend integration."
+    company: "International Institute of SDGs Public Policy Research (IISPPR)",
+    period: "Aug 2025 – Dec 2025",
+    description: "Built a CRM system using the MERN stack for internal workflow automation. Developed a task management platform with real-time tracking. Designed REST APIs and optimized MongoDB queries. Deployed full-stack applications to production."
   }
 ];
 
@@ -66,8 +73,14 @@ export const achievements = [
       "Built a Bluetooth-controlled RoboCar and competed in Robo-Soccer tournaments.",
   },
   {
+    title: "Finalist – Paradigm Shift Hackathon",
+    year: "Dec 2025",
+    description:
+      "Developed 'EmpowHer', a full-stack job platform, recognized for technical ingenuity and engineering excellence at SRISTI, IEEE SB JGEC & GDG Siliguri.",
+  },
+  {
     title: "Hackathons & Coding Contests",
-    year: "2024- Present",
+    year: "2024 – Present",
     description:
       "Active member of JGEC Coders Club, regularly participating in hackathons and coding competitions.",
   },
@@ -105,6 +118,14 @@ export const projects = [
       "A scalable product management platform with secure CRUD operations, MySQL integration, and real-time data updates.",
     link: "https://product-management-system-opal-seven.vercel.app/",
     github: "https://github.com/SkAbuTahir/Product-Management-system-",
+  },
+  {
+    title: "Sales Analytics Dashboard",
+    tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+    description:
+      "Cleaned and processed CSV datasets using Pandas. Built an EDA notebook with statistical insights and visualized trends using Matplotlib and Seaborn to generate business insights.",
+    github: "https://github.com/SkAbuTahir",
+    link: "",
   },
   {
     title: "React To-Do Application",

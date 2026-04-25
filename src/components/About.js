@@ -52,7 +52,10 @@ export default function About() {
 
             <div className="space-y-4 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
               <p>
-                My name is Sk Abu Tahir. I am from Barasat, district North 24 parganas. I passed secondary examination from Barasat Mahatma Gandhi Memorial High school affiliated to  WEST BENGAL BOARD OF SECONDARY EDUCATION  with 92 percent marks in the year 2022. I passed higher secondary examination from same school with 71 percent marks in the year 2024. I appeared for West Bengal Joint Entrance Examination in the year 2024 and obtained 6090 rank. Then I appeared for online counselling of West Bengal Joint Entrance Examination.There I got an opportunity to study in Information technology department in Jalpaiguri Government Engineering College Autonomous. 
+                I&apos;m a Software Engineer (B.Tech IT) at Jalpaiguri Government Engineering College,
+                building full-stack web applications and data-driven systems. I work with React,
+                Next.js, Node.js, PostgreSQL, and Supabase, with additional experience in data
+                engineering using Pandas, NumPy, and ETL pipelines.
               </p>
 
               <p>
@@ -104,9 +107,9 @@ export default function About() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-0 transform translate-y-8 transition-all duration-1000 delay-800"
         >
           {[
-            { number: "20+", label: "Projects Completed" },
-            { number: "3+", label: "Years Learning" },
-            { number: "5+", label: "Technologies" },
+            { number: "2", label: "Internships" },
+            { number: "10+", label: "Projects Built" },
+            { number: "10+", label: "Technologies" },
             { number: "100%", label: "Passion Level" },
           ].map((stat) => (
             <div key={stat.label} className="text-center p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">

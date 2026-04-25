@@ -292,7 +292,7 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6"
             >
-              B.Tech IT Student | Full-Stack Developer
+              Software Engineer | Full-Stack &amp; Data
             </motion.h2>
 
             {/* Paragraph */}
