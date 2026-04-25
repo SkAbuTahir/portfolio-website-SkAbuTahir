@@ -267,11 +267,11 @@ export default function Hero() {
               className="mb-8"
             >
               <Image
-                src="https://avatars.githubusercontent.com/u/177408577?u=2d6a2720ab438df63636b0ad6c00586ebe36c15b&v=4&size=64"
+                src="/profile.jpg"
                 alt="SK Abu Tahir"
-                width={128}
-                height={128}
-                className="w-32 h-32 rounded-full mx-auto lg:mx-0 border-4 border-blue-500"
+                width={160}
+                height={160}
+                className="w-40 h-40 rounded-full mx-auto lg:mx-0 border-4 border-blue-500"
               />
             </motion.div>
 
