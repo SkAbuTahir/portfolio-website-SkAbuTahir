@@ -4,7 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { projects } from "../lib/data";
 import { ChevronDown, ChevronUp, ExternalLink, Github } from "lucide-react";
 
-function ProjectCard({ project, index }) {
+type Project = (typeof import("../lib/data").projects)[number];
+
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <motion.article
       layout
