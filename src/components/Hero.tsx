@@ -15,7 +15,7 @@ export default function Hero() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "SK Abu Tahir",
+            name: "Sk Abu Tahir",
             jobTitle: "Software Engineer",
             description: "B.Tech IT student and Software Engineer specializing in full-stack development and applied machine learning",
             url: "https://skabutahirportfolio.vercel.app/",
@@ -60,7 +60,7 @@ export default function Hero() {
           transition={{ delay: 0.25, duration: 0.5 }}
           className="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-4"
         >
-          SK Abu Tahir
+          Sk Abu Tahir
         </motion.h1>
 
         <motion.p

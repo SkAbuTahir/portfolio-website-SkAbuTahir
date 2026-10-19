@@ -34,7 +34,7 @@ export const skillGroups = [
   },
   {
     name: "Tools & Cloud",
-    items: "Git, GitHub, Linux, Postman, Vercel, Aiven, Railway",
+    items: "Git, GitHub, Docker, Linux, Postman, Vercel, Aiven, Railway",
   },
 ];
 
