@@ -19,8 +19,8 @@ export default function Footer() {
               SK Abu Tahir
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              B.Tech IT Student & Full-Stack Developer passionate about creating 
-              innovative web solutions. Always learning, always building.
+              B.Tech IT student at JGEC and Software Engineer building full-stack
+              web applications and applied machine learning systems.
             </p>
             <div className="flex space-x-4">
               <a
@@ -32,7 +32,7 @@ export default function Footer() {
                 <Github size={20} />
               </a>
               <a
-                href="https://github.com/SkAbuTahir/portfolio-website-SkAbuTahir"
+                href="https://www.linkedin.com/in/sk-abu-tahir-/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-200"
@@ -40,7 +40,7 @@ export default function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto: 36abustudy@gmail.com"
+                href="mailto:abutahir.dev@gmail.com"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-600 transition-all duration-200"
               >
                 <Mail size={20} />
@@ -54,7 +54,8 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { name: "Home", href: "#home" },
-                { name: "About", href: "/about" },
+                { name: "Education", href: "#education" },
+                { name: "About", href: "#about" },
                 { name: "Projects", href: "#projects" },
                 { name: "Contact", href: "#contact" },
               ].map((link) => (

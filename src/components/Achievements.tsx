@@ -50,7 +50,7 @@ export default function Achievements() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-center text-amber-50 mb-12"
+          className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12"
         >
           Achievements & Activities 🏆
         </motion.h2>

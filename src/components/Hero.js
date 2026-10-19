@@ -242,9 +242,9 @@ export default function Hero() {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "SK Abu Tahir",
-            "jobTitle": "Full Stack Developer",
-            "description": "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies",
-            "url": "https://your-domain.com",
+            "jobTitle": "Software Engineer",
+            "description": "B.Tech IT student and Software Engineer specializing in full-stack development and applied machine learning",
+            "url": "https://skabutahirportfolio.vercel.app/",
             "sameAs": [
               "https://github.com/SkAbuTahir",
               "https://www.linkedin.com/in/sk-abu-tahir-/"
@@ -292,7 +292,7 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6"
             >
-              Software Engineer | Full-Stack &amp; Data
+              Software Engineer | Full-Stack &amp; Machine Learning
             </motion.h2>
 
             {/* Paragraph */}
@@ -302,8 +302,9 @@ export default function Hero() {
               transition={{ delay: 0.7, duration: 0.6, ease: "easeOut" }}
               className="text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-2xl"
             >
-              Passionate about creating innovative web solutions that make a
-              difference. Let&apos;s build something amazing together! 
+              B.Tech IT student at JGEC (SGPA 9.48). I build full-stack products
+              and applied ML systems — from CRMs and conference platforms to
+              CNN-LSTM models and AI attendance. 
             </motion.p>
 
             {/* Buttons */}
@@ -339,7 +340,7 @@ export default function Hero() {
               className="flex justify-center lg:justify-start space-x-6 mt-8"
             >
               <a
-                href="https://github.com/SkAbuTahir/portfolio-website-SkAbuTahir"
+                href="https://github.com/SkAbuTahir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"

@@ -87,7 +87,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800 dark:text-gray-200">Email</p>
-                    <p className="text-gray-600 dark:text-gray-300">36abustudy@gmail.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">abutahir.dev@gmail.com</p>
                   </div>
                 </div>
 
@@ -107,7 +107,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800 dark:text-gray-200">Location</p>
-                    <p className="text-gray-600 dark:text-gray-300">Kolkata, India</p>
+                    <p className="text-gray-600 dark:text-gray-300">Kolkata, West Bengal, India</p>
                   </div>
                 </div>
               </div>

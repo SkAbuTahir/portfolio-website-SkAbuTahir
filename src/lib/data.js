@@ -1,155 +1,221 @@
-// import { link } from "fs";
+export const education = [
+  {
+    school: "Jalpaiguri Government Engineering College",
+    location: "West Bengal, India",
+    degree: "B.Tech in Information Technology",
+    period: "Expected 2028",
+    highlights: [
+      "SGPA: 9.48/10",
+      "Core Coursework: Data Structures, Algorithms, Object-Oriented Programming, System Design",
+    ],
+  },
+];
 
-// import { link } from "fs";
+export const skillGroups = [
+  {
+    name: "Languages",
+    items: "JavaScript (ES6+), TypeScript, Python, C, C++",
+  },
+  {
+    name: "Frontend",
+    items: "React.js, Next.js, Tailwind CSS, HTML5, CSS3",
+  },
+  {
+    name: "Backend & Databases",
+    items: "Node.js, Express.js, Prisma, PostgreSQL, MongoDB, MySQL, Supabase",
+  },
+  {
+    name: "Core Concepts & Architecture",
+    items: "System Design, OOP, RESTful APIs, RBAC",
+  },
+  {
+    name: "AI & Machine Learning",
+    items: "TensorFlow, PyTorch, Deep Learning (CNN, LSTM), Computer Vision, Scikit-learn, Pandas",
+  },
+  {
+    name: "Tools & Cloud",
+    items: "Git, GitHub, Linux, Postman, Vercel, Aiven, Railway",
+  },
+];
 
 export const experiences = [
   {
+    title: "Research Intern",
+    link: "https://www.nitjsr.ac.in/",
+    company: "National Institute of Technology Jamshedpur",
+    location: "Jamshedpur, Jharkhand (Hybrid)",
+    period: "Jun 2026 – Jul 2026",
+    highlights: [
+      "Engineered a hybrid CNN-LSTM image captioning model using TensorFlow on the Flickr8k dataset.",
+      "Achieved a BLEU-1 score of 0.55, optimizing model performance for accurate natural language descriptions.",
+      "Conducted research under the guidance of Dr. Mayukh Sarkar, applying advanced Deep Learning techniques.",
+    ],
+  },
+  {
     title: "Project Intern",
-    link: "https://www.deepduofoundation.com/",
+    link: "https://deepduofoundation.com/",
     company: "DeepDuo Foundation",
-    period: "Feb 2026 – Current",
-    description: "Building a conference management system using Next.js and Node.js. Implementing authentication, submission workflows, and review pipelines. Designing scalable backend APIs and database schema. Collaborating in an agile team to ship production-ready features."
+    location: "Kolkata, West Bengal",
+    period: "Feb 2026 – May 2026",
+    highlights: [
+      "Architected a conference management platform using Next.js and Node.js supporting 50+ users.",
+      "Developed scalable APIs, submission workflows, review pipelines, and secure authentication systems.",
+      "Delivered 5+ production-ready features while collaborating in an agile team environment.",
+    ],
   },
   {
     title: "Full-Stack Developer Intern",
     link: "https://iisppr.org.in/",
     company: "International Institute of SDGs Public Policy Research (IISPPR)",
+    location: "Remote",
     period: "Aug 2025 – Dec 2025",
-    description: "Built a CRM system using the MERN stack for internal workflow automation. Developed a task management platform with real-time tracking. Designed REST APIs and optimized MongoDB queries. Deployed full-stack applications to production."
-  }
+    highlights: [
+      "Developed a CRM system utilized by 25+ internal users, reducing manual data workflows by 30%.",
+      "Engineered task and project management workflows within the client management system to improve team coordination.",
+      "Designed REST APIs, optimized MongoDB database queries, and deployed applications to production.",
+    ],
+  },
 ];
 
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 export const blogPosts = [
-  // {
-  //   title: "My Full-Stack Journey ",
-  //   date: "Early 2025",
-  //   excerpt:
-  //     "From starting as a B.Tech IT student to working as a Full-Stack Developer Intern, here’s how I began my journey into scalable web development.",
-  //   content:
-  //     "I started learning web development with the basics of HTML, CSS, and JavaScript. Over time, I discovered React and Next.js, which allowed me to build dynamic, production-ready apps. My internship at IISPPR gave me hands-on experience working with client management systems, role-based authentication, and real-time analytics.",
-  // },
   {
-    title: "Client Management System (ClientPro)",
+    title: "ClientPro — Full-Stack CRM",
+    featured: true,
     date: "August 2025",
     excerpt:
-      "How I built an enterprise-grade business dashboard using Next.js, Tailwind, and Vercel.",
+      "Building a multi-role CRM with Next.js, Supabase, PostgreSQL, and NextAuth.",
     content:
-      "ClientPro was my biggest project so far — it included real-time analytics, project tracking, role-based access (Admin, Manager, Employee), and even invoice management. It was deployed on Vercel with production optimization for fast performance.",
+      "ClientPro includes role-based access control, PostgreSQL with Row Level Security, interactive dashboards, automated invoice generation, and email workflows. It is deployed on Vercel for production use.",
     link: "https://new-client-management-system-vercel-plum.vercel.app/",
   },
   {
+    title: "SnapClass — AI Attendance",
+    featured: true,
+    date: "2026",
+    excerpt:
+      "Using facial recognition and voice biometrics to replace manual roll-calls.",
+    content:
+      "SnapClass combines Dlib facial recognition and Resemblyzer voice biometrics, with QR-based enrollment and real-time PostgreSQL sync through Supabase. The landing page is on Vercel; the Python app runs on Streamlit Cloud.",
+    link: "https://ai-powered-attendence-landing-page.vercel.app/",
+  },
+  {
+    title: "Image Captioning with CNN-LSTM",
+    featured: false,
+    date: "July 2026",
+    excerpt:
+      "Notes from building a hybrid CNN-LSTM captioning model on Flickr8k at NIT Jamshedpur.",
+    content:
+      "During my research internship I engineered a TensorFlow CNN-LSTM pipeline for natural language image descriptions, reaching a BLEU-1 score of 0.55 and iterating on model design under Dr. Mayukh Sarkar.",
+  },
+  {
+    title: "My Full-Stack Journey",
+    featured: false,
+    date: "Early 2025",
+    excerpt:
+      "From HTML and CSS to internships building production CRMs and conference platforms.",
+    content:
+      "I started with HTML, CSS, and JavaScript, then moved into React and Next.js. Internships at IISPPR and DeepDuo gave me hands-on work with authentication, workflows, and shipping features with a team.",
+  },
+  {
     title: "Balancing College & Development",
+    featured: false,
     date: "July 2025",
     excerpt:
-      "Being a 2nd-year student at Jalpaiguri Government Engineering College while also pursuing real-world development experience wasn’t easy, but it was rewarding.",
+      "Studying B.Tech IT at JGEC while taking internships, hackathons, and club work.",
     content:
-      "Between academics, hackathons, and internships, I learned how to manage my time better. Participating in contests and being active in the JGEC Coders Club also pushed me to solve problems faster and collaborate with peers.",
+      "Between academics, hackathons, and internships I learned to manage time better. JGEC Coders Club, JWOC, and contest practice on CodeChef and Codeforces keep the learning loop going.",
   },
 ];
-
-
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 export const achievements = [
   {
-    title: "Multiple Olympiad Winner- IMO, NSO, IEO",
-    year: "2016 - 2019",
-    description:
-      "Achieved top ranks in National Science Olympiad (NSO), International Mathematics Olympiad (IMO), and International English Olympiad (IEO).",
-  },
-  {
-    title: "Three-time Academic Topper In States Level Britti Examination",
-    year: "2017 - 2019",
-    description:
-      "Secured top position in Britti Examination (Classes 6-8) with consistent academic excellence.",
-  },
-  {
-    title: "Robotics Project",
-    year: "2024",
-    description:
-      "Built a Bluetooth-controlled RoboCar and competed in Robo-Soccer tournaments.",
-  },
-  {
     title: "Finalist – Paradigm Shift Hackathon",
-    year: "Dec 2025",
+    year: "2025",
     description:
-      "Developed 'EmpowHer', a full-stack job platform, recognized for technical ingenuity and engineering excellence at SRISTI, IEEE SB JGEC & GDG Siliguri.",
+      "Finalist for EmpowerHer, a full-stack job platform, at Paradigm Shift Hackathon.",
   },
   {
-    title: "Hackathons & Coding Contests",
+    title: "Competitive Programming",
     year: "2024 – Present",
     description:
-      "Active member of JGEC Coders Club, regularly participating in hackathons and coding competitions.",
+      "Active participant on CodeChef and Codeforces.",
   },
-//   {
-//     title: "Full-Stack Developer Internship",
-//     year: "2024- Present",
-//     description:
-//       "Currently interning at IISPPR as a Full-Stack Developer, working with Next.js, React, and full-stack features.",
-//   },
+  {
+    title: "Open Source — JWOC",
+    year: "2026",
+    description:
+      "Active contributor to the JWOC (JGEC Winter of Code) program.",
+  },
+  {
+    title: "Campus Involvement",
+    year: "2024 – Present",
+    description:
+      "Volunteer at JGEC Coders Club and participant in the CFI robotics workshop.",
+  },
 ];
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 export const projects = [
   {
-    title: "Tasknest",
-    tech: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+    title: "ClientPro — Full-Stack CRM System",
+    featured: true,
+    tech: ["Next.js", "Supabase", "PostgreSQL", "NextAuth"],
     description:
-      "A tenet saas application to manage tasks with authentication support, built using Next.js and React.Backend built on Node.js and Express.js with MongoDB as the database.",
-    link: "https://task-nest-alpha.vercel.app/login",
-    github: "https://github.com/SkAbuTahir/task-nest",
-  },
-  {
-    title: "Client Management System (ClientPro)",
-    tech: ["Next.js", "React", "Tailwind CSS", "Vercel"],
-    description:
-      "A business dashboard with real-time analytics, KPI tracking, project management, role-based authentication, and invoicing features.",
+      "Multi-role CRM with RBAC via NextAuth, PostgreSQL Row Level Security, interactive dashboards, automated invoices, and email workflows.",
     link: "https://new-client-management-system-vercel-plum.vercel.app/",
     github: "https://github.com/SkAbuTahir/New_Client-Management-System_Vercel",
   },
   {
-    title: "Product Management System",
-    tech: ["Aiven", "MySQL", "Node.js", "React"],
+    title: "SnapClass — AI Attendance System",
+    featured: true,
+    tech: ["Python", "Streamlit", "Supabase", "Computer Vision"],
     description:
-      "A scalable product management platform with secure CRUD operations, MySQL integration, and real-time data updates.",
-    link: "https://product-management-system-opal-seven.vercel.app/",
+      "AI attendance using facial recognition (Dlib) and voice biometrics (Resemblyzer), QR enrollment, and real-time PostgreSQL sync via Supabase.",
+    link: "https://ai-powered-attendence-landing-page.vercel.app/",
+    github: "https://github.com/SkAbuTahir/ai-attendance-project",
+  },
+  {
+    title: "Product Management System",
+    featured: true,
+    tech: ["React", "Node.js", "MySQL", "Aiven"],
+    description:
+      "Secure product management platform with full CRUD operations, Node.js backend, and MySQL on Aiven for scalable data storage.",
     github: "https://github.com/SkAbuTahir/Product-Management-system-",
+    link: "",
+  },
+  {
+    title: "Tasknest",
+    featured: false,
+    tech: ["Next.js", "React", "Node.js", "MongoDB"],
+    description:
+      "A SaaS-style task manager with authentication. Frontend in Next.js and React; backend on Node.js, Express.js, and MongoDB.",
+    link: "https://task-nest-alpha.vercel.app/login",
+    github: "https://github.com/SkAbuTahir/task-nest",
   },
   {
     title: "Sales Analytics Dashboard",
+    featured: false,
     tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
     description:
-      "Cleaned and processed CSV datasets using Pandas. Built an EDA notebook with statistical insights and visualized trends using Matplotlib and Seaborn to generate business insights.",
+      "Cleaned CSV datasets with Pandas, ran exploratory analysis, and visualized trends with Matplotlib and Seaborn for business insights.",
     github: "https://github.com/SkAbuTahir",
     link: "",
   },
   {
     title: "React To-Do Application",
+    featured: false,
     tech: ["React.js", "Vite", "Tailwind CSS"],
     description:
-      "An interactive task management app featuring add, edit, and delete functionality with modern React hooks.",
+      "Interactive task app with add, edit, and delete flows using modern React hooks.",
     link: "https://react-todo-app-six-lime-28.vercel.app/",
     github: "https://github.com/SkAbuTahir/react-todo-app",
   },
   {
     title: "Be My Valentine",
+    featured: false,
     tech: ["HTML", "CSS", "JavaScript"],
-    description:
-      "A virtual Valentine's Day cards.",
-    github: "https://github.com/SkAbuTahir/usingExpress-willYouBeMyValentine/tree/main",
+    description: "A playful Valentine's Day card experience.",
+    github:
+      "https://github.com/SkAbuTahir/usingExpress-willYouBeMyValentine/tree/main",
     link: "https://using-express-will-you-be-my-valent.vercel.app/",
   },
-  
-  // {
-  //   title: "NexConnect",
-  //   tech: ["Next.js", "React", "Tailwind CSS"],
-  //   description:
-  //     "An Alumni database management system for SIH2025 (currently in progress), enabling alumni to connect and network.",
-  //   link: "/notfound",
-  //   github: "https://github.com/SkAbuTahir/NexConnect-t",
-  // },
 ];

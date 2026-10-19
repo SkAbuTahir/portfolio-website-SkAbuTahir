@@ -14,14 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SK Abu Tahir - Full Stack Developer | React, Next.js, Node.js",
-  description: "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies. B.Tech IT student with hands-on experience in building scalable web applications.",
-  keywords: "SK Abu Tahir, Full Stack Developer, React Developer, Next.js, JavaScript, Web Development, Portfolio",
+  title: "SK Abu Tahir - Full Stack Developer | React, Next.js, ML",
+  description: "Software Engineer and B.Tech IT student at Jalpaiguri Government Engineering College. Full-stack developer specializing in React, Next.js, Node.js, and applied machine learning.",
+  keywords: "SK Abu Tahir, Full Stack Developer, React, Next.js, Machine Learning, TensorFlow, Portfolio",
   authors: [{ name: "SK Abu Tahir" }],
   creator: "SK Abu Tahir",
   openGraph: {
     title: "SK Abu Tahir - Full Stack Developer",
-    description: "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies.",
+    description: "Software Engineer building full-stack products and applied ML systems.",
     url: "https://skabutahirportfolio.vercel.app/",
     siteName: "SK Abu Tahir Portfolio",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SK Abu Tahir - Full Stack Developer",
-    description: "Passionate Full Stack Developer specializing in React, Next.js, and modern web technologies.",
+    description: "Software Engineer building full-stack products and applied ML systems.",
   },
   robots: {
     index: true,
@@ -49,7 +49,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="XJl00tRa138kOdFPiJp0E6qTqzxgP2H5yZ-9sdphc7I"
         />
-        <link rel="canonical" href="https://your-domain.com" />
+        <link rel="canonical" href="https://skabutahirportfolio.vercel.app/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body

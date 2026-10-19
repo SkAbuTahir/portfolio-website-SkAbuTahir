@@ -1,15 +1,16 @@
 "use client";// src/components/About.js
 import { useRef } from "react";
-import { Code, Database, Globe, Server, Palette } from "lucide-react";
+import { Code, Database, Globe, Server, Brain, Cloud } from "lucide-react";
 import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
+import { skillGroups } from "@/lib/data";
 
-const skills = [
-  { name: "Frontend Development", icon: Globe, color: "text-blue-500" },
-  { name: "Backend Development", icon: Server, color: "text-green-500" },
-  { name: "Database Design", icon: Database, color: "text-purple-500" },
-  { name: "DSA C/C++", icon: Code, color: "text-yellow-500" },
-  { name: "UI/UX Design", icon: Palette, color: "text-orange-500" },
-  { name: "Full-Stack Solutions", icon: Code, color: "text-indigo-500" },
+const skillIcons = [
+  { icon: Code, color: "text-blue-500" },
+  { icon: Globe, color: "text-cyan-500" },
+  { icon: Database, color: "text-purple-500" },
+  { icon: Server, color: "text-green-500" },
+  { icon: Brain, color: "text-orange-500" },
+  { icon: Cloud, color: "text-indigo-500" },
 ];
 
 export default function About() {
@@ -47,34 +48,32 @@ export default function About() {
             className="about-text opacity-0 transform translate-y-8 transition-all duration-1000 delay-400"
           >
             <h3 className="text-2xl font-poppins font-semibold mb-6 text-gray-800 dark:text-gray-200">
-              Hey there! I&apos;m a passionate developer who loves turning ideas into reality
+              Software Engineer building full-stack products and applied ML
             </h3>
 
             <div className="space-y-4 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
               <p>
-                I&apos;m a Software Engineer (B.Tech IT) at Jalpaiguri Government Engineering College,
-                building full-stack web applications and data-driven systems. I work with React,
-                Next.js, Node.js, PostgreSQL, and Supabase, with additional experience in data
-                engineering using Pandas, NumPy, and ETL pipelines.
+                I&apos;m pursuing B.Tech in Information Technology at Jalpaiguri Government
+                Engineering College (expected 2028, SGPA 9.48/10). I work across React,
+                Next.js, Node.js, PostgreSQL, and Supabase, and I apply deep learning
+                with TensorFlow and PyTorch for computer vision and sequence models.
               </p>
 
               <p>
-                I thrive on challenges and love the problem-solving aspect of development. 
-                Whether it&apos;s building responsive web applications, designing intuitive user 
-                interfaces, or architecting robust backend systems, I approach each project 
-                with enthusiasm and attention to detail.
+                Recent work includes a CNN-LSTM image captioning model at NIT Jamshedpur,
+                a conference management platform at DeepDuo Foundation, and a CRM used by
+                25+ internal users at IISPPR.
               </p>
 
               <p>
-                When I&apos;m not coding, you&apos;ll find me exploring new technologies, participating 
-                in hackathons, or sharing knowledge with fellow developers. I believe in the 
-                power of collaboration and continuous learning! 
+                Outside internships I contribute to JWOC, volunteer with JGEC Coders Club,
+                and compete on CodeChef and Codeforces.
               </p>
             </div>
 
             <div className="mt-8">
               <a
-                href="..#projects"
+                href="#projects"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300"
               >
                 View My Work
@@ -87,17 +86,21 @@ export default function About() {
             ref={skillsRef}
             className="grid grid-cols-2 gap-6 opacity-0 transform translate-y-8 transition-all duration-1000 delay-600"
           >
-            {skills.map((skill) => (
-              <div
-                key={skill.name}
-                className="bg-white dark:bg-gray-800 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-200"
-              >
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-700 mb-4 ${skill.color}`}>
-                  <skill.icon size={32} />
+            {skillGroups.map((skill, index) => {
+              const Icon = skillIcons[index].icon;
+              return (
+                <div
+                  key={skill.name}
+                  className="bg-white dark:bg-gray-800 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition-shadow duration-200"
+                >
+                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-700 mb-4 ${skillIcons[index].color}`}>
+                    <Icon size={24} />
+                  </div>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">{skill.name}</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{skill.items}</p>
                 </div>
-                <h4 className="font-semibold text-gray-800 dark:text-gray-200">{skill.name}</h4>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -107,10 +110,10 @@ export default function About() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-0 transform translate-y-8 transition-all duration-1000 delay-800"
         >
           {[
-            { number: "2", label: "Internships" },
-            { number: "10+", label: "Projects Built" },
+            { number: "3", label: "Internships" },
+            { number: "9.48", label: "SGPA / 10" },
+            { number: "2028", label: "Expected Grad" },
             { number: "10+", label: "Technologies" },
-            { number: "100%", label: "Passion Level" },
           ].map((stat) => (
             <div key={stat.label} className="text-center p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
               <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>

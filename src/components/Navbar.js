@@ -5,9 +5,10 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
+  { name: "Education", href: "#education" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "About", href: "#about" },
   { name: "Achievements", href: "#achievements" },
   { name: "Blog", href: "#blog" },
   { name: "Contact", href: "#contact" },
@@ -60,7 +61,7 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-5 text-sm">
             {navItems.map((item) => (
               <a
                 key={item.name}
