@@ -52,24 +52,23 @@ export default function BlogPage() {
   return (
     <section
       id="blog"
-      className="py-20 dark:bg-gray-900 bg-gray-50 relative overflow-hidden"
+      className="py-20 bg-gray-50 dark:bg-gray-900"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-950 dark:via-gray-900 dark:to-blue-950" />
-
-      <div className="max-w-6xl mx-auto px-4 relative z-10">
+      <div className="max-w-5xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-3"
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-3xl font-bold text-gray-900 dark:text-white mb-3"
         >
           Blog
         </motion.h2>
-        <p className="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+        <p className="text-gray-500 dark:text-gray-400 mb-10">
           Featured posts first. Open the full archive if you want every article.
         </p>
 
-        <motion.div layout className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <motion.div layout className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {visiblePosts.map((post, index) => (
               <BlogCard key={post.title} post={post} index={index} />
