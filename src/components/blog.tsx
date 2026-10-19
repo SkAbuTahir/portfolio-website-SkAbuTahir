@@ -4,7 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { blogPosts } from "../lib/data";
 import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 
-function BlogCard({ post, index }) {
+type BlogPost = (typeof import("../lib/data").blogPosts)[number];
+
+function BlogCard({ post, index }: { post: BlogPost; index: number }) {
   return (
     <motion.article
       layout
